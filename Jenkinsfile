@@ -5,8 +5,7 @@ pipeline {
   agent any
 
   triggers {
-    upstream(upstreamProjects: 'spoofax-gradle-test/log/develop', threshold: hudson.model.Result.SUCCESS)
-    upstream(upstreamProjects: 'spoofax-gradle-test/pie/develop', threshold: hudson.model.Result.SUCCESS)
+    upstream(upstreamProjects: '../log/develop,../pie/develop', threshold: 'SUCCESS')
   }
 
   environment {
