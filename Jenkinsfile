@@ -5,7 +5,7 @@ pipeline {
   agent any
 
   triggers {
-    upstream(upstreamProjects: '../log/develop,../pie/develop', threshold: 'SUCCESS')
+    upstream(upstreamProjects: '../log/develop,../pie/develop', threshold: hudson.model.Result.SUCCESS)
   }
 
   environment {
