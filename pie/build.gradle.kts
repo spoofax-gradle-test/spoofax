@@ -3,5 +3,5 @@ plugins {
 }
 dependencies {
   api(project(":spoofax.api"))
-  api("org.metaborg:pie.runtime:master-SNAPSHOT")
+  api("org.metaborg:pie.runtime:develop-SNAPSHOT")
 }
