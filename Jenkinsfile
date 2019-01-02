@@ -4,6 +4,11 @@ def publishTaggedOnly
 pipeline {
   agent any
 
+  triggers {
+    upstream(upstreamProjects: 'spoofax-gradle-test/log/develop', threshold: hudson.model.Result.SUCCESS)
+    upstream(upstreamProjects: 'spoofax-gradle-test/pie/develop', threshold: hudson.model.Result.SUCCESS)
+  }
+
   environment {
     JENKINS_NODE_COOKIE = 'dontKillMe' // Necessary for the Gradle daemon to be kept alive.
   }
