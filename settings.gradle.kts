@@ -1,5 +1,12 @@
 rootProject.name = "spoofax"
 
+pluginManagement {
+  repositories {
+    gradlePluginPortal()
+    maven(url = "http://home.gohla.nl:8091/artifactory/all/")
+  }
+}
+
 include("spoofax.api")
 include("spoofax.runtime")
 include("spoofax.pie")
