@@ -1,7 +1,3 @@
-plugins {
-  application
-}
-
 dependencies {
   compile(project(":spoofax.pie"))
   compile(project(":spoofax.runtime"))
