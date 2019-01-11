@@ -6,5 +6,6 @@ dependencies {
 }
 
 application {
+  applicationName = "spoofax"
   mainClassName = "mb.spoofax.cli.Main"
 }
