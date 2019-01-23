@@ -1,3 +1,7 @@
+plugins {
+  id("org.metaborg.gradle.config.java-application")
+}
+
 dependencies {
   compile(project(":spoofax.pie"))
   compile(project(":spoofax.runtime"))
